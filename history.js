@@ -1,14 +1,15 @@
 const histories = document.getElementById("histories");
 
-function addHistory(questionText, timeTaken, errorCount) {
+function addHistory(questionText, timeTaken, errorCount, wordInMin) {
   const newRow = document.createElement("div");
   newRow.classList.add("card");
 
   newRow.innerHTML = `
-  <h3>${questionText}</h3>
+  <h3 >${questionText}</h3>
   <div>
-  <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
-  <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+  <p >You took: <span class="bold">${timeTaken}</span> seconds</p>
+  <p>Word per minute<span class="bold red">${wordInMin}</span>s</p>
+  <p class="mx-1">You made <span class="bold  red">${errorCount}</span> mistakes</p>
   </div>
   `;
 
