@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>Blog</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-4">Important information</h1>
+    <hr />
+    <div class="accordion container mt-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Difference Between Local Storage, Session Storage
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>Local Storage:</strong> This read-only interface property
+            provides access to the Document’s local storage object, the stored
+            data is stored across browser sessions. Similar to sessionStorage,
+            except that localStorage data gets cleared when the page session
+            ends – that is when the page is closed. It is cleared when the last
+            “private” tab of a browser is closed.
+            <strong>Local storage has 4 methods:</strong>
+            <p>
+              <strong>setItem() Method</strong> – This method takes two
+              parameters one is key and another one is value. It is used to
+              store the value in a particular location with the name of the key.
+              localStorage.setItem(key, value)<br />
+              <strong> getItem() Method </strong> – This method takes one
+              parameter that is key which is used to get the value stored with a
+              particular key name. localStorage.getItem(key) <br />
+              <strong>removeItem() Meodth</strong> – This is method is used to
+              remove the value stored in the memory in reference to key.
+              localStorage.removeItem(key) <br />
+              <strong> clear() Method </strong> – This method is used to clear
+              all the values stored in localstorage. localStorage.clear()
+            </p>
+
+            <br />
+            <br />
+            <p>
+              <strong>Session Storage</strong> objects can be accessed using the
+              sessionStorage read-only property. The difference between
+              sessionStorage and localStorage is that localStorage data does not
+              expire, whereas sessionStorage data is cleared when the page
+              session ends.
+            </p>
+            <strong>Session Storage has 4 methods:</strong>
+            <p>
+              <strong>etItem() Method</strong> – This method takes two
+              parameters one is key and another one is value. It is used to
+              store the value in a particular location with the name of the key.
+              sessionStorage.setItem(key, value) <br />
+              <strong> getIteam() Method</strong> – This method takes one
+              parameter that is key which is used to get the value stored with a
+              particular key name. sessionStorage.getItem(key) <br />
+              <strong>removeItem()d Metho</strong> – This is method is used to
+              remove the value stored in the memory in reference to key.
+              sessionStorage.removeItem(key) <br />
+              <strong>clear() Method </strong> – This method is used to clear
+              all the values stored in the session storage
+              sessionStorage.clear()
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Differences Between Local Scope and Global Scope Variable In
+            JavaScript
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              <strong>Global scope</strong> — Global scope contains all of the
+              things defined outside of all code blocks. A code block simply
+              consists of grouped statements inside curly braces ({ }). if
+              statement, loops, function are examples of structure that create a
+              code block. A global variable has global scope. A global variable
+              is accessible from anywhere in the code. <br />
+
+              <strong> Local Scope</strong> — Local scope contains things
+              defined inside code blocks. A local variable has local scope. A
+              local variable is only accessible where it’s declared.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            What is an event loop?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Event loop is an endless loop, which waits for tasks, executes them
+            and then sleeps until it receives more tasks. The event loop
+            executes tasks from the event queue only when the call stack is
+            empty i.e. there is no ongoing task. The event loop allows us to use
+            callbacks and promises
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            when do we get undefined in javascript ?
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              The undefined is a primitive type in JavaScript. So the undefined
+              is a type. And the undefined type has exactly one value that is
+              undefined.
+            </p>
+
+            <p>1) Accessing an uninitialized variable</p>
+            <p>2) Accessing a non-existing property of an object</p>
+            <p>
+              3) function with a number of parameters, you often pass the same
+              number of arguments
+            </p>
+            <p>
+              4) A function that doesn’t have a return statement implicitly
+              returns undefined.
+            </p>
+            <p>5) Accessing out-of-bounds array elements</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootsrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
